@@ -1,0 +1,10 @@
+---
+Name: goldfinch-blocks
+After:
+  - '#elemental'
+  - '#elementalcache'
+---
+
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - Goldfinch\Blocks\Extensions\BaseElementExtension
