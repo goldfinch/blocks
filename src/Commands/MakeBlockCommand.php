@@ -7,7 +7,7 @@ use Goldfinch\Taz\Services\InputOutput;
 use Symfony\Component\Console\Command\Command;
 
 #[AsCommand(name: 'make:block-gf')]
-class BlockCommand extends GeneratorCommand
+class MakeBlockCommand extends GeneratorCommand
 {
     protected static $defaultName = 'make:block-gf';
 
