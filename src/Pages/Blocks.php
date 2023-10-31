@@ -2,10 +2,10 @@
 
 namespace Goldfinch\Blocks\Pages;
 
+use SilverStripe\CMS\Model\SiteTree;
 use Goldfinch\Blocks\Controllers\BlocksController;
-use Page;
 
-class Blocks extends Page
+class Blocks extends SiteTree
 {
     private static $allowed_children = [];
 
@@ -72,15 +72,5 @@ class Blocks extends Page
         // ..
 
         return $fields;
-    }
-
-    public function SchemaData()
-    {
-        // Spatie\SchemaOrg\Schema
-    }
-
-    public function OpenGraph()
-    {
-        // Astrotomic\OpenGraph\OpenGraph
     }
 }

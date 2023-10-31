@@ -2,9 +2,9 @@
 
 namespace Goldfinch\Blocks\Controllers;
 
-use PageController;
+use SilverStripe\CMS\Controllers\ContentController;
 
-class BlocksController extends PageController
+class BlocksController extends ContentController
 {
     private static $allowed_actions = [];
 
