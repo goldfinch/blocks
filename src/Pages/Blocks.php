@@ -7,21 +7,19 @@ use Goldfinch\Blocks\Controllers\BlocksController;
 
 class Blocks extends SiteTree
 {
-    private static $allowed_children = [];
+    // private static $allowed_children = [];
 
     private static $controller_name = BlocksController::class;
 
     private static $db = [];
 
-    private static $indexes = [];
-
-    private static $has_many = [];
-
-    private static $owned_by = [];
-
-    private static $casting = [];
-
-    private static $defaults = [];
+    // private static $indexes = [];
+    // private static $has_many = [];
+    // private static $owned_by = [];
+    // private static $casting = [];
+    // private static $defaults = [];
+    // private static $searchable_fields = [];
+    // private static $field_labels = [];
 
     private static $table_name = 'Blocks';
 
@@ -31,13 +29,9 @@ class Blocks extends SiteTree
 
     private static $icon_class = 'bi-file-earmark-plus-fill';
 
-    private static $searchable_fields = [];
-
-    private static $field_labels = [];
-
     private static $description = null;
 
-    private static $base_description = 'Generic content page';
+    private static $base_description = 'Block page';
 
     protected function onBeforeWrite()
     {
