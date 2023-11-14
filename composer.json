@@ -15,7 +15,7 @@
         "silverstripe/admin": "^2.0",
         "dnadesign/silverstripe-elemental": "^5.0",
         "dnadesign/silverstripe-elemental-list": "^2.0@beta",
-        "dnadesign/silverstripe-elemental-virtual": "^1.0@dev"
+        "dnadesign/silverstripe-elemental-virtual": "^2.0"
 
     },
     "autoload": {
