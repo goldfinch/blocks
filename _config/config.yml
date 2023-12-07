@@ -8,3 +8,9 @@ After:
 DNADesign\Elemental\Models\BaseElement:
   extensions:
     - Goldfinch\Blocks\Extensions\BaseElementExtension
+
+DNADesign\ElementalList\Model\ElementList:
+  icon: "bi-plugin"
+
+DNADesign\ElementalVirtual\Model\ElementVirtual:
+  icon: "bi-hypnotize"
