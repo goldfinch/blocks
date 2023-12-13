@@ -22,3 +22,6 @@ DNADesign\ElementalList\Model\ElementList:
 
 DNADesign\ElementalVirtual\Model\ElementVirtual:
   icon: "bi-hypnotize"
+
+Goldfinch\Blocks\Pages\Blocks:
+  icon_class: "bi-file-earmark-plus-fill"

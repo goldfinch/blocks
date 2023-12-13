@@ -27,7 +27,7 @@ class Blocks extends SiteTree
 
     private static $icon = null;
 
-    private static $icon_class = 'bi-file-earmark-plus-fill';
+    private static $icon_class = 'font-icon-block-layout-2';
 
     private static $description = null;
 
