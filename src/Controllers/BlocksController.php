@@ -8,16 +8,6 @@ use SilverStripe\CMS\Controllers\ContentController;
 
 class BlocksController extends ContentController
 {
-    // private static $allowed_actions = [];
-    // private static $casting = [];
-
-    protected function init()
-    {
-        parent::init();
-
-        // ..
-    }
-
     public function index(HTTPRequest $request)
     {
         return $this->renderWith([Blocks::class, 'Page']);
