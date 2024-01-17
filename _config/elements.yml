@@ -1,9 +1,8 @@
 ---
 Name: goldfinch-blocks-elemental
 After:
-  - '#elemental'
+  - "#elemental"
 ---
-
 Goldfinch\Blocks\Pages\Blocks:
   extensions:
     - DNADesign\Elemental\Extensions\ElementalPageExtension

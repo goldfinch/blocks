@@ -1,22 +1,19 @@
 ---
 Name: goldfinch-blocks
 After:
-  - '#elemental'
-  - '#elementalcache'
-  - '#elemental-list'
-  - '#elementalvirtual'
+  - "#elemental"
+  - "#elementalcache"
+  - "#elemental-list"
+  - "#elementalvirtual"
 ---
-
 DNADesign\Elemental\Models\BaseElement:
   extensions:
     - Goldfinch\Blocks\Extensions\BaseElementExtension
-
 ---
 Name: goldfinch-blocks-icon
 Only:
-  moduleexists: 'goldfinch/enchantment'
+  moduleexists: "goldfinch/enchantment"
 ---
-
 DNADesign\ElementalList\Model\ElementList:
   icon: "bi-plugin"
 

@@ -2,9 +2,7 @@
     "name": "goldfinch/blocks",
     "description": "",
     "type": "silverstripe-vendormodule",
-    "keywords": [
-        "silverstripe"
-    ],
+    "keywords": ["silverstripe"],
     "license": "MIT",
     "authors": [
         {
@@ -20,7 +18,6 @@
         "dnadesign/silverstripe-elemental": "^5.0",
         "dnadesign/silverstripe-elemental-list": "^2.0@beta",
         "dnadesign/silverstripe-elemental-virtual": "^2.0"
-
     },
     "autoload": {
         "psr-4": {
