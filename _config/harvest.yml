@@ -1,0 +1,7 @@
+---
+Name: goldfinch-blocks-harvest
+After: "goldfinch/harvest"
+---
+Goldfinch\Harvest\Harvest:
+  harvesters:
+    blocks: Goldfinch\Blocks\Harvest\BlocksHarvest

@@ -1,0 +1,7 @@
+---
+Name: goldfinch-blocks-mill
+After: "goldfinch/mill"
+---
+Goldfinch\Mill\Mill:
+  millable:
+    Goldfinch\Blocks\Mills\BlocksMill: Goldfinch\Blocks\Pages\Blocks
