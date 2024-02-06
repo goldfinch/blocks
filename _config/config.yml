@@ -6,9 +6,12 @@ After:
   - "#elemental-list"
   - "#elementalvirtual"
 ---
-DNADesign\Elemental\Models\BaseElement:
+Goldfinch\Blocks\Models\BlockElement:
   extensions:
     - Goldfinch\Blocks\Extensions\BaseElementExtension
+# DNADesign\Elemental\Models\BaseElement:
+#   extensions:
+#     - Goldfinch\Blocks\Extensions\BaseElementExtension
 ---
 Name: goldfinch-blocks-icon
 Only:
