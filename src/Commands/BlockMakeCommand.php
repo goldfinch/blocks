@@ -19,7 +19,7 @@ class BlockMakeCommand extends GeneratorCommand
 
     protected $stub = 'block.stub';
 
-    protected $prefix = 'Block';
+    protected $suffix = 'Block';
 
     protected function execute($input, $output): int
     {
@@ -27,7 +27,7 @@ class BlockMakeCommand extends GeneratorCommand
             return Command::FAILURE;
         }
 
-        $className = $this->askClassNameQuestion('What [class name] this block need to be assigned to (eg: Page, App/Pages/Page)', $input, $output);
+        $className = $this->askClassNameQuestion('What [class name] this block need to be assigned to? (eg: Page, App/Pages/Page)', $input, $output);
 
         $nameInput = $this->getAttrName($input);
 

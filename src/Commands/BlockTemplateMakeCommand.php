@@ -17,7 +17,7 @@ class BlockTemplateMakeCommand extends GeneratorCommand
 
     protected $stub = 'block-template.stub';
 
-    protected $prefix = 'Block';
+    protected $suffix = 'Block';
 
     protected $extension = '.ss';
 }
