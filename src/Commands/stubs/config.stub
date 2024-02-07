@@ -1,0 +1,4 @@
+---
+Name: app-{{ class }}
+After: "goldfinch/blocks"
+---

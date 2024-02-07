@@ -3,7 +3,6 @@
 namespace Goldfinch\Blocks\Commands;
 
 use Goldfinch\Taz\Console\GeneratorCommand;
-use Symfony\Component\Console\Command\Command;
 
 #[AsCommand(name: 'make:block-template')]
 class BlockTemplateMakeCommand extends GeneratorCommand
@@ -21,11 +20,4 @@ class BlockTemplateMakeCommand extends GeneratorCommand
     protected $prefix = 'Block';
 
     protected $extension = '.ss';
-
-    protected function execute($input, $output): int
-    {
-        parent::execute($input, $output);
-
-        return Command::SUCCESS;
-    }
 }

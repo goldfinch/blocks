@@ -2,8 +2,8 @@
 {{ namespace }}
 use Goldfinch\Fielder\Fielder;
 use Goldfinch\Mill\Traits\Millable;
-use Goldfinch\Fielder\Traits\FielderTrait;
 use Goldfinch\Blocks\Models\BlockElement;
+use Goldfinch\Fielder\Traits\FielderTrait;
 
 class {{ class }}Block extends BlockElement
 {

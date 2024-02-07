@@ -23,32 +23,36 @@ class BlockMakeCommand extends GeneratorCommand
 
     protected function execute($input, $output): int
     {
-        parent::execute($input, $output);
+        if (parent::execute($input, $output) === false) {
+            return Command::FAILURE;
+        }
+
+        $className = $this->askClassNameQuestion('What [class name] this block need to be assigned to (eg: Page, App/Pages/Page)', $input, $output);
 
         $nameInput = $this->getAttrName($input);
 
-        // Create page template
-
+        // create page template
         $command = $this->getApplication()->find('make:block-template');
+        $command->run(new ArrayInput(['name' => $nameInput]), $output);
 
-        $arguments = [
-            'name' => $nameInput,
-        ];
+        // find config
+        $config = $this->findYamlConfigFileByName('app-blocks');
 
-        $greetInput = new ArrayInput($arguments);
-        $returnCode = $command->run($greetInput, $output);
+        // create new config if not exists
+        if (!$config) {
 
-        // Register block
+            $command = $this->getApplication()->find('vendor:blocks:config');
+            $command->run(new ArrayInput(['name' => 'blocks']), $output);
 
-        $rootDir = $this->getNamespaceRootDir();
+            $config = $this->findYamlConfigFileByName('app-blocks');
+        }
 
-        $newContent = $this->addToLine(
-            'app/_config/elements.yml',
-            'allowed_elements:',
-            '    - ' . $rootDir . '\Blocks\\' . $nameInput . 'Block',
+        // update config
+        $this->updateYamlConfig(
+            $config,
+            $className . '.allowed_elements',
+            $this->getNamespaceClass($input),
         );
-
-        file_put_contents('app/_config/elements.yml', $newContent);
 
         return Command::SUCCESS;
     }
