@@ -27,7 +27,7 @@ class BlockMakeCommand extends GeneratorCommand
             return Command::FAILURE;
         }
 
-        $className = $this->askClassNameQuestion('What [class name] this block need to be assigned to? (eg: Page, App/Pages/Page)', $input, $output);
+        $className = $this->askClassNameQuestion('What [class name] this block need to be assigned to? (eg: Page, App\Pages\Page)', $input, $output);
 
         $nameInput = $this->getAttrName($input);
 
