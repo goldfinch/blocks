@@ -41,8 +41,13 @@ class BlockMakeCommand extends GeneratorCommand
         // create new config if not exists
         if (!$config) {
 
-            $command = $this->getApplication()->find('vendor:blocks:config');
-            $command->run(new ArrayInput(['name' => 'blocks']), $output);
+            $command = $this->getApplication()->find('make:config');
+            $command->run(new ArrayInput([
+                'name' => 'blocks',
+                '--plain' => true,
+                '--after' => 'goldfinch/blocks',
+                '--nameprefix' => 'app-',
+            ]), $output);
 
             $config = $this->findYamlConfigFileByName('app-blocks');
         }
