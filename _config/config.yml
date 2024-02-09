@@ -9,6 +9,10 @@ After:
 Goldfinch\Blocks\Models\BlockElement:
   extensions:
     - Goldfinch\Helpers\Extensions\BaseElementExtension
+
+Goldfinch\Blocks\Models\BlockElementList:
+  extensions:
+    - Goldfinch\Helpers\Extensions\BaseElementExtension
 ---
 Name: goldfinch-blocks-icon
 Only:
