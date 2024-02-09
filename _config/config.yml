@@ -8,10 +8,7 @@ After:
 ---
 Goldfinch\Blocks\Models\BlockElement:
   extensions:
-    - Goldfinch\Blocks\Extensions\BaseElementExtension
-# DNADesign\Elemental\Models\BaseElement:
-#   extensions:
-#     - Goldfinch\Blocks\Extensions\BaseElementExtension
+    - Goldfinch\Helpers\Extensions\BaseElementExtension
 ---
 Name: goldfinch-blocks-icon
 Only:
