@@ -16,12 +16,12 @@ class BlockElementList extends ElementList
         // ..
     }
 
-    public function getSummary()
+    public function getSummary(): string
     {
         return $this->getDescription();
     }
 
-    public function getType()
+    public function getType(): string
     {
         $default = $this->i18n_singular_name() ?: 'Block';
 
