@@ -7,8 +7,6 @@ use Goldfinch\Fielder\Traits\FielderTrait;
 
 class {{ class }}Block extends BlockElement
 {
-    use FielderTrait; // , Millable
-
     private static $table_name = '{{ class }}Block';
     private static $singular_name = '{{ class_singular }}';
     private static $plural_name = '{{ class_plural }}';
