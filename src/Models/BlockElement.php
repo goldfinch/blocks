@@ -6,25 +6,14 @@ use Goldfinch\Fielder\Fielder;
 use Goldfinch\Mill\Traits\Millable;
 use Goldfinch\Fielder\Traits\FielderTrait;
 use DNADesign\Elemental\Models\BaseElement;
+use Goldfinch\Helpers\Traits\BaseElementTrait;
 
 class BlockElement extends BaseElement
 {
-    use FielderTrait, Millable;
+    use FielderTrait, Millable, BaseElementTrait;
 
     public function fielder(Fielder $fielder): void
     {
         // ..
-    }
-
-    public function getSummary()
-    {
-        return $this->getDescription();
-    }
-
-    public function getType()
-    {
-        $default = $this->i18n_singular_name() ?: 'Block';
-
-        return _t(__CLASS__ . '.BlockType', $default);
     }
 }

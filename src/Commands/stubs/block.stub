@@ -4,9 +4,12 @@ use Goldfinch\Fielder\Fielder;
 use Goldfinch\Mill\Traits\Millable;
 use Goldfinch\Blocks\Models\BlockElement;
 use Goldfinch\Fielder\Traits\FielderTrait;
+use Goldfinch\Helpers\Traits\BaseElementTrait;
 
 class {{ class }}Block extends BlockElement
 {
+    use BaseElementTrait;
+
     private static $table_name = '{{ class }}Block';
     private static $singular_name = '{{ class_singular }}';
     private static $plural_name = '{{ class_plural }}';
