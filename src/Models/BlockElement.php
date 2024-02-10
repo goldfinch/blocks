@@ -12,6 +12,10 @@ class BlockElement extends BaseElement
 {
     use FielderTrait, Millable, BaseElementTrait;
 
+    private static string $singular_name = 'Block';
+
+    private static string $plural_name = 'Block';
+
     public function fielder(Fielder $fielder): void
     {
         // ..

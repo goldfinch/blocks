@@ -13,6 +13,12 @@ Goldfinch\Blocks\Models\BlockElement:
 Goldfinch\Blocks\Models\BlockElementList:
   extensions:
     - Goldfinch\Helpers\Extensions\BaseElementExtension
+
+Goldfinch\Blocks\Pages\Blocks:
+  disallowed_elements:
+    - DNADesign\Elemental\Models\ElementContent
+    - DNADesign\ElementalList\Model\ElementList
+    - Goldfinch\Blocks\Models\BlockElement
 ---
 Name: goldfinch-blocks-icon
 Only:
