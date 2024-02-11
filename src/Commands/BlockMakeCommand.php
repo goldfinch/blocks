@@ -56,7 +56,7 @@ class BlockMakeCommand extends GeneratorCommand
         $this->updateYamlConfig(
             $config,
             $className . '.allowed_elements',
-            $this->getNamespaceClass($input),
+            [$this->getNamespaceClass($input)],
         );
 
         return Command::SUCCESS;
