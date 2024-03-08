@@ -18,7 +18,7 @@ class BlockElementList extends ElementList
     {
         $fields = parent::getCMSFields();
 
-        $fielder = $fields->fielder($this);
+        $fielder = $this->intFielder($fields)->getFielder();
 
         // ..
 
