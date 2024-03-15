@@ -1,6 +1,5 @@
 <?php
 {{ namespace }}
-use Goldfinch\Mill\Traits\Millable;
 use Goldfinch\Blocks\Models\BlockElement;
 use Goldfinch\Helpers\Traits\BaseElementTrait;
 
