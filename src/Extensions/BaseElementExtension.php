@@ -8,7 +8,7 @@ use SilverStripe\ORM\DataExtension;
 
 class BaseElementExtension extends DataExtension
 {
-    public function updatePreviewLink($link)
+    public function updatePreviewLink(&$link)
     {
         $page = $this->owner->getPage();
 
